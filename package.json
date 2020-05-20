@@ -1,0 +1,72 @@
+{
+  "_from": "math-and-unit-parser",
+  "_id": "math-and-unit-parser@1.3.6",
+  "_inBundle": false,
+  "_integrity": "sha512-aplwlANXuqT9JDgeIovZ0tjz3tWqLXrzFMUkTIAcPOshqsdsYOXdzcyekV9KbxMPFAwWGT21kIpGMqilsBj3mQ==",
+  "_location": "/math-and-unit-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "math-and-unit-parser",
+    "name": "math-and-unit-parser",
+    "escapedName": "math-and-unit-parser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/math-and-unit-parser/-/math-and-unit-parser-1.3.6.tgz",
+  "_shasum": "192201ddcb473059a01f4fe07aee8c18c703a798",
+  "_spec": "math-and-unit-parser",
+  "_where": "/Users/honza/Projects/rekuper/app-2.0",
+  "author": {
+    "name": "Alex Fischer",
+    "email": "lxfschr@gmail.com"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "change-case": "^3.0.2"
+  },
+  "deprecated": false,
+  "description": "Evaluates math expressions obeying order of operations and with support for units and trig functions.",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^5.2.0"
+  },
+  "keywords": [
+    "math",
+    "parser",
+    "expression",
+    "evaluate",
+    "evaluator",
+    "input",
+    "units",
+    "unit",
+    "conversion",
+    "convert",
+    "converter"
+  ],
+  "license": "ISC",
+  "main": "./build/index.js",
+  "name": "math-and-unit-parser",
+  "prepublish": "npm run build",
+  "repository": {
+    "type": "git",
+    "url": "https://git.corp.adobe.com/euclid/math-and-unit-parser/tree/master/src"
+  },
+  "scripts": {
+    "build": "babel src/ --out-dir build",
+    "test": "mocha --compilers js:babel-core/register test/Test.js"
+  },
+  "version": "1.3.6"
+}
