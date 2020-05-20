@@ -1,7 +1,7 @@
-import { Status, ParsingErrorType, EvaluationErrorType, ConversionErrorType } from "../src/constants/MathParser.js";
-import { Unit } from "../src/constants/Units.js";
-import evaluateExpression from "../src/models/MathFilter.js";
-import assert from "assert";
+const { Status, ParsingErrorType, EvaluationErrorType, ConversionErrorType } = require("../build/constants/MathParser.js");
+const { Unit } = require("../build/constants/Units.js");
+const evaluateExpression = require("../build/models/MathFilter.js").default;
+const assert = require("assert");
 
 describe.only("MathFilter", () => {
 

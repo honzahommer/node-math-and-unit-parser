@@ -1,47 +1,15 @@
 {
-  "_from": "math-and-unit-parser",
-  "_id": "math-and-unit-parser@1.3.6",
-  "_inBundle": false,
-  "_integrity": "sha512-aplwlANXuqT9JDgeIovZ0tjz3tWqLXrzFMUkTIAcPOshqsdsYOXdzcyekV9KbxMPFAwWGT21kIpGMqilsBj3mQ==",
-  "_location": "/math-and-unit-parser",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "math-and-unit-parser",
-    "name": "math-and-unit-parser",
-    "escapedName": "math-and-unit-parser",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/math-and-unit-parser/-/math-and-unit-parser-1.3.6.tgz",
-  "_shasum": "192201ddcb473059a01f4fe07aee8c18c703a798",
-  "_spec": "math-and-unit-parser",
-  "_where": "/Users/honza/Projects/rekuper/app-2.0",
-  "author": {
-    "name": "Alex Fischer",
-    "email": "lxfschr@gmail.com"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "change-case": "^3.0.2"
-  },
-  "deprecated": false,
+  "name": "math-and-unit-parser",
+  "version": "1.3.6",
+  "private": true,
   "description": "Evaluates math expressions obeying order of operations and with support for units and trig functions.",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "mocha": "^5.2.0"
+  "main": "./build/index.js",
+  "directories": {
+    "lib": "build",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/Test.js"
   },
   "keywords": [
     "math",
@@ -56,17 +24,20 @@
     "convert",
     "converter"
   ],
+  "repository": "honzahommer/node-math-and-unit-parser",
+  "author": "Alex Fischer <lxfschr@gmail.com> (www.alexjfischer.com)",
+  "contributors": [
+    "Grayson Lang <grayson.lang@gmail.com>",
+    "Claire Chan <cchan@adobe.com>",
+    "Honza Hommer <honza@hommer.cz>"
+  ],
+  "homepage": "https://github.com/honzahommer/node-math-and-unit-parser#README",
   "license": "ISC",
-  "main": "./build/index.js",
-  "name": "math-and-unit-parser",
-  "prepublish": "npm run build",
-  "repository": {
-    "type": "git",
-    "url": "https://git.corp.adobe.com/euclid/math-and-unit-parser/tree/master/src"
+  "dependencies": {
+    "change-case": "^3.0.2"
   },
-  "scripts": {
-    "build": "babel src/ --out-dir build",
-    "test": "mocha --compilers js:babel-core/register test/Test.js"
-  },
-  "version": "1.3.6"
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^7.1.2"
+  }
 }
